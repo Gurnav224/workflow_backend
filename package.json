@@ -1,0 +1,25 @@
+{
+  "name": "workflow-backend",
+  "version": "1.0.0",
+  "description": "an application to manage the projects",
+  "keywords": [
+    "nodejs",
+    "mongodb",
+    "express"
+  ],
+  "homepage": "https://github.com/Gurnav224/workflow_backend#readme",
+  "bugs": {
+    "url": "https://github.com/Gurnav224/workflow_backend/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gurnav224/workflow_backend.git"
+  },
+  "license": "ISC",
+  "author": "chaudharyg856@gmail.com",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
