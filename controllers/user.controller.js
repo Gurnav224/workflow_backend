@@ -17,7 +17,6 @@ exports.register = async (req, res) => {
     }
     const user = new User({ name, email, password });
     await user.save();
-    console.log(user);
     res.status(201).json({ message: "user register successfully", user });
   } catch (error) {
     console.error("failed to register new user", error);
@@ -48,7 +47,7 @@ exports.login = async (req, res) => {
       expiresIn: "24h",
     });
 
-    res.status(200).json({ success: true, token });
+    res.status(200).json(token);
   } catch (error) {
     console.error("failed to login user", error);
     res.status(500).json({ error: error.message });
@@ -58,7 +57,7 @@ exports.login = async (req, res) => {
 exports.dashboard = async (req, res) => {
   try {
     const user = await User.findOne({ _id: req.user._id });
-    res.json(user);
+   res.json(user);
   } catch (error) {
     console.error(error);
   }
