@@ -60,5 +60,18 @@ exports.dashboard = async (req, res) => {
    res.json(user);
   } catch (error) {
     console.error(error);
+    res.status(500).json({error:"failed get user"})
   }
 };
+
+
+
+exports.allUsers = async (req, res) => {
+  try {
+    const users = await User.find({});
+    res.status(200).json(users)
+  } catch (error) {
+    console.log(error)
+    res.status(500).json({error:'no user found'})
+  }
+}
