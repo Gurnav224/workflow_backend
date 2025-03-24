@@ -15,8 +15,28 @@ exports.createNewTask = async (req, res) => {
 }
 
 exports.getAllTasks  = async (req, res) => {
+    const { team , owner , tags , project , status } = req.query;
+    console.log(req.query)
+    let query = {}
+    if(status){
+        query.status = status;
+
+    }
+
+    if(owner){
+        query.owners = owner
+    }
+
+    if(tags) {
+        query.tags = tags
+    }
+
+    if(project){
+        query.project = project
+    }
+
     try {
-        const tasks = await Task.find({}).populate('owners project team');
+        const tasks = await Task.find(query).populate('owners project team');
         if(tasks.length === 0) {
             return res.status(404).json({error:'no task found'})
         }
