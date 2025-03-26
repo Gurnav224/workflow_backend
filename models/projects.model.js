@@ -14,7 +14,7 @@ const projectSchema = new mongoose.Schema({
         type: String,
         enum: ["To Do", "In Progress", "Completed", "Blocked"],
         default: "To Do",
-      },
+      }
 })
 
 
