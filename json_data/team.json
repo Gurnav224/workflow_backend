@@ -1,0 +1,63 @@
+[
+  {
+    "name": "Marketing",
+    "description": "Responsible for all marketing and promotional activities."
+  },
+  {
+    "name": "Sales",
+    "description": "Handles client relationships and sales operations."
+  },
+  {
+    "name": "Human Resources",
+    "description": "Manages employee relations and organizational development."
+  },
+  {
+    "name": "Customer Support",
+    "description": "Provides assistance and support to customers."
+  },
+  {
+    "name": "Finance",
+    "description": "Oversees financial planning and record-keeping."
+  },
+  {
+    "name": "Product Management",
+    "description": "Oversees the development and lifecycle of products."
+  },
+  {
+    "name": "Quality Assurance",
+    "description": "Ensures the quality and reliability of products through testing."
+  },
+  {
+    "name": "IT Support",
+    "description": "Provides technical assistance and support for IT-related issues."
+  },
+  {
+    "name": "Research and Development",
+    "description": "Conducts research to innovate and improve products and services."
+  },
+  {
+    "name": "Operations",
+    "description": "Manages day-to-day operations to ensure business efficiency."
+  },
+  {
+    "name": "Legal",
+    "description": "Handles legal matters and ensures compliance with regulations."
+  },
+  {
+    "name": "Public Relations",
+    "description": "Manages communication between the organization and the public."
+  },
+  {
+    "name": "Design",
+    "description": "Responsible for creating visual concepts and designs for products and marketing."
+  },
+  {
+    "name": "Logistics",
+    "description": "Coordinates the transportation and storage of goods."
+  },
+  {
+    "name": "Procurement",
+    "description": "Manages the acquisition of goods and services for the organization."
+  }
+]
+

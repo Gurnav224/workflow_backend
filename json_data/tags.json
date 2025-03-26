@@ -1,0 +1,33 @@
+[
+  {
+    "name": "Bug"
+  },
+  {
+    "name": "Feature"
+  },
+  {
+    "name": "Improvement"
+  },
+  {
+    "name": "Documentation"
+  },
+  {
+    "name": "Urgent"
+  },
+  {
+    "name": "Low Priority"
+  },
+  {
+    "name": "High Priority"
+  },
+  {
+    "name": "Enhancement"
+  },
+  {
+    "name": "Refactor"
+  },
+  {
+    "name": "Testing"
+  }
+]
+

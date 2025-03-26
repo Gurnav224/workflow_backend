@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Task Manager",
+    "description": "A simple task management app to track daily tasks."
+  },
+  {
+    "name": "Weather App",
+    "description": "An app that fetches real-time weather data based on location."
+  },
+  {
+    "name": "E-commerce Store",
+    "description": "An online shopping platform with product listings and a cart system."
+  },
+   {
+    "name": "Library Management System",
+    "description": "A system to manage library resources and user interactions."
+  },
+  {
+    "name": "Online Learning Platform",
+    "description": "A platform offering various online courses and learning materials."
+  },
+  {
+    "name": "Personal Finance Tracker",
+    "description": "An application to help users track and manage their personal finances."
+  }
+]
+
