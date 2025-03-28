@@ -59,3 +59,38 @@ exports.getAllTasks = async (req, res) => {
     res.status(500).json({ error: "failed to get the task" });
   }
 };
+
+exports.getTaskById = async (req, res) => {
+   const { taskId } = req.params;
+  try {
+    if(!taskId) {
+      return res.status(404).json({error:"Task Id required"})
+    }
+    const task = await Task.findById(taskId).populate('project team owners');
+    if(!task) {
+      return res.status(404).json({error:'task not found'})
+    }
+    res.status(200).json(task)
+  } catch (error) {
+    res.status(500).json({error:'server error'})
+  }
+}
+
+
+exports.getUpdateTaskById = async (req, res) => {
+  const {taskId} = req.params;
+  console.log(taskId)
+  try {
+    if(!taskId) {
+      return res.status(404).json({error:"Task Id required"})
+    }
+    const task = await Task.findByIdAndUpdate(taskId,{
+      $set:{status:"Completed"}
+    },{new:true}).populate('project team owners');
+
+    res.status(200).json(task)
+  } catch (error) {
+    console.error(error)
+    res.status(500).json({error:'server error'})
+  }
+}
